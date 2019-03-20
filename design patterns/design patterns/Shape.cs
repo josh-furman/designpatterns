@@ -2,10 +2,10 @@
 
 namespace design_patterns
 {
-	public class Shape
+	public abstract class Shape
 	{
-		public string type { get; set; }
-		public int sides { get; set; }
-		public string area { get; set; }
+		public abstract string type { get; set; }
+		public abstract int sides { get; set; }
+		public abstract string area { get; set; }
 	}
 }

@@ -1,16 +1,16 @@
 ﻿namespace design_patterns
 {
-	public class Triangle : Shape
+	public class Circle : Shape
 	{
 		public override string type { get; set; }
 		public override int sides { get; set; }
 		public override string area { get; set; }
 
-		public Triangle()
+		public Circle()
 		{
-			this.type = "Triangle";
-			this.sides = 3;
-			this.area = "(1/2) * b * h";
+			this.type = "Circle";
+			this.sides = 0;
+			this.area = "pi * r * r";
 		}
 	}
 }

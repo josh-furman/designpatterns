@@ -1,4 +1,6 @@
-﻿namespace design_patterns.notes
+﻿using System;
+
+namespace design_patterns.notes
 {
 	public class ShapeFactory
 	{
@@ -9,13 +11,8 @@
 				return null;
 			}
 
-			if (type == "triangle")
-			{
-
-			}
-
-			return null;
-
+			var args = new object[] { };
+			return Activator.CreateInstance(Type.GetType("design_patterns." + type), args) as Shape;
 		}
 	}
 }
